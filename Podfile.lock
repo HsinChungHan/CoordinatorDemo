@@ -1,0 +1,26 @@
+PODS:
+  - ChainsKit (0.1.8)
+  - SDWebImage (4.4.5):
+    - SDWebImage/Core (= 4.4.5)
+  - SDWebImage/Core (4.4.5)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - ChainsKit
+  - SDWebImage (~> 4.0)
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ChainsKit
+    - SDWebImage
+    - SnapKit
+
+SPEC CHECKSUMS:
+  ChainsKit: 61fed717ec918190cbd563bbc8ce367766750760
+  SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 37e57e6f056738854118257197f1d4a195944c79
+
+COCOAPODS: 1.5.3
