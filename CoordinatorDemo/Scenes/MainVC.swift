@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainVC.swift
 //  CoordinatorDemo
 //
 //  Created by TING YEN KUO on 2019/4/24.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+final class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        navigationItem.title("Main Content")
+        
+        view.backgroundColor(.white)
     }
-
-
 }
-

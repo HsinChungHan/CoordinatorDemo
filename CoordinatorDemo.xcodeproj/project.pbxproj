@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		6E1FCBF90975966FBD5D2566 /* Pods_CoordinatorDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DD801070101DF897CC3756 /* Pods_CoordinatorDemo.framework */; };
 		B0B4330822700D4D004273DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4330722700D4D004273DD /* AppDelegate.swift */; };
-		B0B4330A22700D4D004273DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4330922700D4D004273DD /* ViewController.swift */; };
 		B0B4330D22700D4D004273DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B4330B22700D4D004273DD /* Main.storyboard */; };
 		B0B4330F22700D50004273DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B4330E22700D50004273DD /* Assets.xcassets */; };
 		B0B4331222700D50004273DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B4331022700D50004273DD /* LaunchScreen.storyboard */; };
 		B0B4331D22700D51004273DD /* CoordinatorDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4331C22700D51004273DD /* CoordinatorDemoTests.swift */; };
+		B0B4332B22700ECF004273DD /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4332A22700ECF004273DD /* BaseCoordinator.swift */; };
+		B0B4332D22701394004273DD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4332C22701394004273DD /* AppCoordinator.swift */; };
+		B0B4332F227015B0004273DD /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4332E227015B0004273DD /* OnboardingCoordinator.swift */; };
+		B0B43332227017FE004273DD /* FirstRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B43331227017FE004273DD /* FirstRunVC.swift */; };
+		B0B43335227019E1004273DD /* UserDefaults+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B43334227019E1004273DD /* UserDefaults+Enum.swift */; };
+		B0B433372270322B004273DD /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B433362270322B004273DD /* MainVC.swift */; };
+		B0B4333922703261004273DD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4333822703261004273DD /* MainCoordinator.swift */; };
+		B0B4333C22703524004273DD /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4333B22703524004273DD /* UIColor+RGB.swift */; };
+		B0B4333E227039C1004273DD /* RemoteNotificationPermissionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4333D227039C1004273DD /* RemoteNotificationPermissionVC.swift */; };
+		B0B4334122703BA8004273DD /* LocationPermissionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4334022703BA8004273DD /* LocationPermissionVC.swift */; };
 		C5D8D38F38780B899B45F69C /* Pods_CoordinatorDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C18010CAD987D85B2A8CF93 /* Pods_CoordinatorDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +43,6 @@
 		A90BCD99B8DA70571CA04877 /* Pods-CoordinatorDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoordinatorDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoordinatorDemoTests/Pods-CoordinatorDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0B4330422700D4D004273DD /* CoordinatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B4330722700D4D004273DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B0B4330922700D4D004273DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0B4330C22700D4D004273DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0B4330E22700D50004273DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0B4331122700D50004273DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +50,16 @@
 		B0B4331822700D50004273DD /* CoordinatorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B4331C22700D51004273DD /* CoordinatorDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorDemoTests.swift; sourceTree = "<group>"; };
 		B0B4331E22700D51004273DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0B4332A22700ECF004273DD /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		B0B4332C22701394004273DD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B0B4332E227015B0004273DD /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		B0B43331227017FE004273DD /* FirstRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRunVC.swift; sourceTree = "<group>"; };
+		B0B43334227019E1004273DD /* UserDefaults+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Enum.swift"; sourceTree = "<group>"; };
+		B0B433362270322B004273DD /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		B0B4333822703261004273DD /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		B0B4333B22703524004273DD /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		B0B4333D227039C1004273DD /* RemoteNotificationPermissionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotificationPermissionVC.swift; sourceTree = "<group>"; };
+		B0B4334022703BA8004273DD /* LocationPermissionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionVC.swift; sourceTree = "<group>"; };
 		E7DD801070101DF897CC3756 /* Pods_CoordinatorDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoordinatorDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE7C2A6073D312FBF6F7106 /* Pods-CoordinatorDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoordinatorDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoordinatorDemoTests/Pods-CoordinatorDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,7 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				B0B4330722700D4D004273DD /* AppDelegate.swift */,
-				B0B4330922700D4D004273DD /* ViewController.swift */,
+				B0B43330227017E9004273DD /* Scenes */,
+				B0B4332922700EA9004273DD /* Coordinators */,
+				B0B43333227019CA004273DD /* Utils */,
+				B0B4333A22703510004273DD /* Extensions */,
 				B0B4332722700E1F004273DD /* Supports */,
 			);
 			path = CoordinatorDemo;
@@ -134,6 +155,52 @@
 				B0B4331022700D50004273DD /* LaunchScreen.storyboard */,
 			);
 			name = Supports;
+			sourceTree = "<group>";
+		};
+		B0B4332922700EA9004273DD /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				B0B4332A22700ECF004273DD /* BaseCoordinator.swift */,
+				B0B4332C22701394004273DD /* AppCoordinator.swift */,
+				B0B4332E227015B0004273DD /* OnboardingCoordinator.swift */,
+				B0B4333822703261004273DD /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		B0B43330227017E9004273DD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B0B433362270322B004273DD /* MainVC.swift */,
+				B0B4333F22703B8A004273DD /* Onboarding */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B0B43333227019CA004273DD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B0B43334227019E1004273DD /* UserDefaults+Enum.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B0B4333A22703510004273DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B0B4333B22703524004273DD /* UIColor+RGB.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B0B4333F22703B8A004273DD /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B0B43331227017FE004273DD /* FirstRunVC.swift */,
+				B0B4333D227039C1004273DD /* RemoteNotificationPermissionVC.swift */,
+				B0B4334022703BA8004273DD /* LocationPermissionVC.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,8 +368,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0B4330A22700D4D004273DD /* ViewController.swift in Sources */,
+				B0B4332D22701394004273DD /* AppCoordinator.swift in Sources */,
+				B0B4333922703261004273DD /* MainCoordinator.swift in Sources */,
+				B0B4332B22700ECF004273DD /* BaseCoordinator.swift in Sources */,
+				B0B43332227017FE004273DD /* FirstRunVC.swift in Sources */,
+				B0B4333C22703524004273DD /* UIColor+RGB.swift in Sources */,
+				B0B4334122703BA8004273DD /* LocationPermissionVC.swift in Sources */,
+				B0B43335227019E1004273DD /* UserDefaults+Enum.swift in Sources */,
 				B0B4330822700D4D004273DD /* AppDelegate.swift in Sources */,
+				B0B4332F227015B0004273DD /* OnboardingCoordinator.swift in Sources */,
+				B0B4333E227039C1004273DD /* RemoteNotificationPermissionVC.swift in Sources */,
+				B0B433372270322B004273DD /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
