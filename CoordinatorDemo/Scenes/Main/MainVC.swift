@@ -15,7 +15,7 @@ final class MainVC: UIViewController {
         return item
     }()
     
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: TabBarOneCoordinator?
     
     @objc func settingItemTapped() {
         coordinator?.showPhoneValidation()
