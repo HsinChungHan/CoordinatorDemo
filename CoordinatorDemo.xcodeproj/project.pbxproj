@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6E1FCBF90975966FBD5D2566 /* Pods_CoordinatorDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DD801070101DF897CC3756 /* Pods_CoordinatorDemo.framework */; };
+		B04DA4E8227452D20046CC2B /* PhoneValidationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DA4E7227452D20046CC2B /* PhoneValidationVC.swift */; };
+		B04DA4EA22745A800046CC2B /* PhoneCodeValidationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DA4E922745A800046CC2B /* PhoneCodeValidationVC.swift */; };
+		B04DA4EC22745B5B0046CC2B /* PhoneValidationDoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DA4EB22745B5B0046CC2B /* PhoneValidationDoneVC.swift */; };
+		B04DA4EE22745CE80046CC2B /* PhoneValidationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DA4ED22745CE80046CC2B /* PhoneValidationCoordinator.swift */; };
+		B04DA4F0227587610046CC2B /* UIWindow+SwapRootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DA4EF227587610046CC2B /* UIWindow+SwapRootVC.swift */; };
 		B0B4330822700D4D004273DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4330722700D4D004273DD /* AppDelegate.swift */; };
 		B0B4330D22700D4D004273DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B4330B22700D4D004273DD /* Main.storyboard */; };
 		B0B4330F22700D50004273DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B4330E22700D50004273DD /* Assets.xcassets */; };
@@ -41,6 +46,11 @@
 		1B6911F994DA8A71087ACEE1 /* Pods-CoordinatorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoordinatorDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoordinatorDemo/Pods-CoordinatorDemo.release.xcconfig"; sourceTree = "<group>"; };
 		907D3A2CC15E258E89D02EAE /* Pods-CoordinatorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoordinatorDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoordinatorDemo/Pods-CoordinatorDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A90BCD99B8DA70571CA04877 /* Pods-CoordinatorDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoordinatorDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoordinatorDemoTests/Pods-CoordinatorDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B04DA4E7227452D20046CC2B /* PhoneValidationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneValidationVC.swift; sourceTree = "<group>"; };
+		B04DA4E922745A800046CC2B /* PhoneCodeValidationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCodeValidationVC.swift; sourceTree = "<group>"; };
+		B04DA4EB22745B5B0046CC2B /* PhoneValidationDoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneValidationDoneVC.swift; sourceTree = "<group>"; };
+		B04DA4ED22745CE80046CC2B /* PhoneValidationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneValidationCoordinator.swift; sourceTree = "<group>"; };
+		B04DA4EF227587610046CC2B /* UIWindow+SwapRootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+SwapRootVC.swift"; sourceTree = "<group>"; };
 		B0B4330422700D4D004273DD /* CoordinatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B4330722700D4D004273DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0B4330C22700D4D004273DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,6 +114,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B04DA4E62274528D0046CC2B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B0B433362270322B004273DD /* MainVC.swift */,
+				B04DA4E7227452D20046CC2B /* PhoneValidationVC.swift */,
+				B04DA4E922745A800046CC2B /* PhoneCodeValidationVC.swift */,
+				B04DA4EB22745B5B0046CC2B /* PhoneValidationDoneVC.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		B0B432FB22700D4D004273DD = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +185,7 @@
 				B0B4332C22701394004273DD /* AppCoordinator.swift */,
 				B0B4332E227015B0004273DD /* OnboardingCoordinator.swift */,
 				B0B4333822703261004273DD /* MainCoordinator.swift */,
+				B04DA4ED22745CE80046CC2B /* PhoneValidationCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -171,7 +193,7 @@
 		B0B43330227017E9004273DD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				B0B433362270322B004273DD /* MainVC.swift */,
+				B04DA4E62274528D0046CC2B /* Main */,
 				B0B4333F22703B8A004273DD /* Onboarding */,
 			);
 			path = Scenes;
@@ -189,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				B0B4333B22703524004273DD /* UIColor+RGB.swift */,
+				B04DA4EF227587610046CC2B /* UIWindow+SwapRootVC.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -368,9 +391,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04DA4EC22745B5B0046CC2B /* PhoneValidationDoneVC.swift in Sources */,
 				B0B4332D22701394004273DD /* AppCoordinator.swift in Sources */,
 				B0B4333922703261004273DD /* MainCoordinator.swift in Sources */,
 				B0B4332B22700ECF004273DD /* BaseCoordinator.swift in Sources */,
+				B04DA4E8227452D20046CC2B /* PhoneValidationVC.swift in Sources */,
+				B04DA4EE22745CE80046CC2B /* PhoneValidationCoordinator.swift in Sources */,
 				B0B43332227017FE004273DD /* FirstRunVC.swift in Sources */,
 				B0B4333C22703524004273DD /* UIColor+RGB.swift in Sources */,
 				B0B4334122703BA8004273DD /* LocationPermissionVC.swift in Sources */,
@@ -378,6 +404,8 @@
 				B0B4330822700D4D004273DD /* AppDelegate.swift in Sources */,
 				B0B4332F227015B0004273DD /* OnboardingCoordinator.swift in Sources */,
 				B0B4333E227039C1004273DD /* RemoteNotificationPermissionVC.swift in Sources */,
+				B04DA4F0227587610046CC2B /* UIWindow+SwapRootVC.swift in Sources */,
+				B04DA4EA22745A800046CC2B /* PhoneCodeValidationVC.swift in Sources */,
 				B0B433372270322B004273DD /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

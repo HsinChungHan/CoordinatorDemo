@@ -65,7 +65,8 @@ extension AppCoordinator {
     }
     
     private func runMainFlow() {
-        let coordinator = MainCoordinator(window: window)
+        let afterOnboarding = window.rootViewController != nil
+        let coordinator = MainCoordinator(window: window).afterOnboarding(afterOnboarding)
         
         addDependency(coordinator)
         coordinator.start()

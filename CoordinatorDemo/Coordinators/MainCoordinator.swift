@@ -17,6 +17,7 @@ final class MainCoordinator: BaseCoordinator {
     }()
     
     private let window: UIWindow
+    private var afterOnboarding = false
     
     public var finishFlow: (() -> Void)?
     
@@ -25,11 +26,24 @@ final class MainCoordinator: BaseCoordinator {
     }
     
     override func start() {
-        showMain()
+        
+        if afterOnboarding {
+            pushMain()
+        } else {
+            showMain()
+        }
     }
     
-    public func endOnboarding() {
-        finishFlow?()
+    public func showPhoneValidation() {
+        let coordinator = PhoneValidationCoordinator(navigationController: navigationController)
+        
+        coordinator.finishFlow = { [weak self, weak coordinator] in
+            self?.navigationController.popToRootViewController(animated: true)
+            self?.removeDependency(coordinator)
+        }
+        
+        addDependency(coordinator)
+        coordinator.start()
     }
     
 }
@@ -38,10 +52,28 @@ extension MainCoordinator {
     
     private func showMain() {
         let vc = MainVC()
+        vc.coordinator = self
         navigationController.viewControllers = [vc]
         
         window.rootViewController(navigationController)
             .makeKeyAndVisibleWindow()
+    }
+    
+    private func pushMain() {
+        let vc = MainVC()
+        vc.coordinator = self
+        navigationController.viewControllers = [vc]
+        window.swapRootViewControllerWithAnimation(newViewController: navigationController,
+                                                   animationType: SwapRootVCAnimationType.present)
+    }
+}
+
+extension MainCoordinator {
+    
+    @discardableResult
+    public func afterOnboarding(_ afterOnboarding: Bool) -> Self {
+        self.afterOnboarding = afterOnboarding
+        return self
     }
 }
 
